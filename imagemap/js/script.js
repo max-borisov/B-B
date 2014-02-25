@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function() {
     // Init imagemap
     MapImageIcon.init();
 
