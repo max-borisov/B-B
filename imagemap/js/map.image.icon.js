@@ -64,5 +64,24 @@ MapImageIcon = {
             $('.map-debug-holder')
                 .html('<em>X: ' + (event.pageX - parentOffset.left) + '<br />Y: ' + (event.pageY - parentOffset.top) + '</em>');
         })
+    },
+
+    // Show icon set over image
+    showIconSet: function(iconSet) {
+        if (!window.iconSet) return false;
+
+        // Image container
+        var parent = $('.map-image-holder');
+
+        for (var i in iconSet) {
+            $('<div class="map-image-icon"></div>')
+            .addClass('tooltip')
+            .attr('title', iconSet[i].text)
+             // Set position
+             .css({top: iconSet[i].y + 'px', left: iconSet[i].x  + 'px'})
+             .appendTo(parent);
+        }
+        // Add tooltip
+        parent.find('.tooltip').tooltipster();
     }
 };
