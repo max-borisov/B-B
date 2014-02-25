@@ -1,12 +1,14 @@
 MapImageIcon = {
+    // Icon counter
     _mapIconCounter : 0,
+    // Icon width
     iconW: 27,
+    // Icon height
     iconH: 26,
 
     // Main function
     init: function() {
-        var parentOffset, iconX, iconY, that = this;
-        var iconCoordsRow;
+        var parentOffset, iconX, iconY, that = this, iconCoordsRow;
 
         // Image click handler
         $('.map-image-holder img').on('click', function(event) {
@@ -15,9 +17,12 @@ MapImageIcon = {
             // Offset from left top corner to mouse cursor
             iconX = event.pageX - parentOffset.left - (Math.round(that.iconW/2));
             iconY = event.pageY - parentOffset.top - (Math.round(that.iconH/2));
+
             // Add icon on the image
             $('<div class="map-image-icon"></div>')
+                // Set id
                 .attr('id', 'map-icon-' + (++that._mapIconCounter))
+                // Set position
                 .css({top: iconY + 'px', left: iconX  + 'px'})
                 .appendTo($(this).parent());
 
@@ -30,33 +35,33 @@ MapImageIcon = {
                 </div>');
             // Get last added icon row
             iconCoordsRow = $('.map-points-holder div:last');
-            // Get first input holding X value
+            // Get first input and put X value
             iconCoordsRow.find('input:eq(0)').val(iconX);
-            // Get second input holding Y value
+            // Get second input and put Y value
             iconCoordsRow.find('input:eq(1)').val(iconY);
         })
 
         // Add handler for 'delete icon' button
         this._mapIconDelete();
         // Debug panel (to view coordinates)
-        this._mouseMoveCatch();
+        this._mouseMoveDebug();
     },
 
     _mapIconDelete: function() {
         var mapIconId;
         $('.map-points-holder').on('click', 'div input:button', function() {
+            // Get icon id from data attr
             mapIconId = $(this).data('iconId');
-
             $(this).parent().remove();
             $('#map-icon-' + mapIconId).remove();
         })
     },
 
-    _mouseMoveCatch: function() {
+    _mouseMoveDebug: function() {
         var parentOffset;
         $('.map-image-holder img').on('mousemove', function(event) {
             parentOffset = $(this).parent().offset();
-            $('.map-mouse-points')
+            $('.map-debug-holder')
                 .html('<em>X: ' + (event.pageX - parentOffset.left) + '<br />Y: ' + (event.pageY - parentOffset.top) + '</em>');
         })
     }
