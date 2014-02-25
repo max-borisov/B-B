@@ -15,8 +15,8 @@ MapImageIcon = {
             // Offset for parent element (from left top corner)
             parentOffset = jQuery(this).parent().offset();
             // Offset from left top corner to mouse cursor
-            iconX = event.pageX - parentOffset.left - (Math.round(that.iconW/2));
-            iconY = event.pageY - parentOffset.top - (Math.round(that.iconH/2));
+            iconX = window.parseInt(event.pageX - parentOffset.left - (Math.round(that.iconW/2)));
+            iconY = window.parseInt(event.pageY - parentOffset.top - (Math.round(that.iconH/2)));
 
             // Add icon on the image
             jQuery('<div class="map-image-icon"></div>')
@@ -64,7 +64,7 @@ MapImageIcon = {
         jQuery('.map-image-holder img').on('mousemove', function(event) {
             parentOffset = jQuery(this).parent().offset();
             jQuery('.map-debug-holder')
-                .html('<em>X: ' + (event.pageX - parentOffset.left) + '<br />Y: ' + (event.pageY - parentOffset.top) + '</em>');
+                .html('<em>X: ' + window.parseInt(event.pageX - parentOffset.left) + '<br />Y: ' + window.parseInt(event.pageY - parentOffset.top) + '</em>');
         })
     },
 
