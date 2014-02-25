@@ -93,7 +93,6 @@ MapImageIcon = {
     },
 
     _initMapIconCounter: function() {
-//        alert(12)
         // Get amount of previously added icons
         var iconCount = jQuery('.map-image-holder .map-image-icon').length;
         this._mapIconCounter = iconCount > 0 ? iconCount : 0;
