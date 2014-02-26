@@ -1,18 +1,11 @@
-#wrap-content {
-    width: 750px;
-    /*height: 500px;*/
-    border: 1px solid #000;
-    margin: 0 auto;
-    padding: 0;
-}
 .map-image-holder {
-    text-align: center;
     position: relative;
+    display: inline-block;
 }
-#wrap-content img {
-    width: 750px;
+.map-image-holder img {
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 .map-image-icon {
     position: absolute;
@@ -22,4 +15,6 @@
     height: 26px;
     background-image: url("../images/icon.png");
     opacity: 1 !important;
+    z-index: 900 !important;
+    background-repeat: no-repeat;
 }

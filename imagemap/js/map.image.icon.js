@@ -8,23 +8,31 @@ MapImageIcon = {
 
     // Main function
     init: function() {
-        var parentOffset, iconX, iconY, that = this, iconCoordsRow;
+        var offsetHolder, imgHolder, iconX, iconY, that = this, iconCoordsRow;
+        // Image container
+        var imgHolder = jQuery('.map-image-holder');
+        // Image elem itself
+        var imgElem = imgHolder.find('img');
 
         // Image click handler
-        jQuery('.map-image-holder img').on('click', function(event) {
+        imgElem.on('click', function(event) {
             // Offset for parent element (from left top corner)
-            parentOffset = jQuery(this).parent().offset();
+            offsetHolder = imgHolder.offset();
             // Offset from left top corner to mouse cursor
-            iconX = window.parseInt(event.pageX - parentOffset.left - (Math.round(that.iconW/2)));
-            iconY = window.parseInt(event.pageY - parentOffset.top - (Math.round(that.iconH/2)));
+            iconX = window.parseInt(event.pageX - offsetHolder.left - Math.round(that.iconW/2));
+            // Offset in percentage
+            iconXPr = (iconX/imgElem.width()*100).toFixed(3);
+            iconY = window.parseInt(event.pageY - offsetHolder.top - Math.round(that.iconH/2));
+            // Offset in percentage
+            iconYPr = (iconY/imgElem.height()*100).toFixed(3);
 
             // Add icon on the image
             jQuery('<div class="map-image-icon"></div>')
                 // Set id
                 .attr('id', 'map-icon-' + (that._mapIconCounter))
                 // Set position
-                .css({top: iconY + 'px', left: iconX  + 'px'})
-                .appendTo(jQuery(this).parent());
+                .css({top: iconYPr + '%', left: iconXPr  + '%'})
+                .appendTo(imgHolder);
 
             // Add block with input elements holding icon coordinates
             jQuery('.map-points-holder').append('\
@@ -36,9 +44,9 @@ MapImageIcon = {
             // Get last added icon row
             iconCoordsRow = jQuery('.map-points-holder div:last');
             // Get first input and put X value
-            iconCoordsRow.find('input:eq(0)').val(iconX);
+            iconCoordsRow.find('input:eq(0)').val(iconXPr);
             // Get second input and put Y value
-            iconCoordsRow.find('input:eq(1)').val(iconY);
+            iconCoordsRow.find('input:eq(1)').val(iconYPr);
 
             that._mapIconCounter++;
         })
@@ -60,36 +68,42 @@ MapImageIcon = {
     },
 
     _mouseMoveDebug: function() {
-        var parentOffset;
-        jQuery('.map-image-holder img').on('mousemove', function(event) {
+        var parentOffset, offsetX, offsetY;
+        var imgElem = jQuery('.map-image-holder img');
+        imgElem.on('mousemove', function(event) {
             parentOffset = jQuery(this).parent().offset();
+            offsetX = window.parseInt(event.pageX - parentOffset.left);
+            offsetXPr = (offsetX/imgElem.width()*100).toFixed(3);
+            offsetY = window.parseInt(event.pageY - parentOffset.top);
+            offsetYPr = (offsetY/imgElem.height()*100).toFixed(3);
+
             jQuery('.map-debug-holder')
-                .html('<em>X: ' + window.parseInt(event.pageX - parentOffset.left) + '<br />Y: ' + window.parseInt(event.pageY - parentOffset.top) + '</em>');
+                .html('<em>X: ' + offsetX + 'px | ' + offsetXPr + '%<br />Y: ' + offsetY + 'px | ' + offsetYPr + '%</em>');
         })
     },
 
-    // Show icon set over image
     showIconSet: function(iconSet) {
         if (!window.iconSet) return false;
 
         // Image container
         var parent = jQuery('.map-image-holder');
+        // Image element itself
+        var imgElem = parent.find('img');
 
         for (var i in iconSet) {
             jQuery('<div class="map-image-icon"></div>')
-            .addClass('tooltip')
-            .attr('title', iconSet[i].text)
-            .attr('id', 'map-icon-' + i)
-             // Set position
-             .css({top: iconSet[i].y + 'px', left: iconSet[i].x  + 'px'})
-             .appendTo(parent);
+                .addClass('tooltip')
+                .attr('title', iconSet[i].text)
+                .attr('id', 'map-icon-' + i)
+                // Set position
+                .css({top: iconSet[i].y + '%', left: iconSet[i].x  + '%'})
+                .appendTo(parent);
         }
         // Add tooltip
         parent.find('.tooltip').tooltipster();
 
         // Update icon counter
         this._initMapIconCounter();
-
     },
 
     _initMapIconCounter: function() {
