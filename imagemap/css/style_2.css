@@ -1,5 +1,5 @@
 #wrap-content {
-    width: 750px;
+    /*width: 750px;*/
     /*height: 500px;*/
     border: 1px solid #000;
     margin: 0 auto;
@@ -10,7 +10,7 @@
     position: relative;
 }
 #wrap-content img {
-    width: 750px;
+    /*width: 750px;*/
     margin: 0;
     padding: 0;
 }
