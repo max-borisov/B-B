@@ -100,7 +100,7 @@ MapImageIcon = {
                 .appendTo(parent);
         }
         // Add tooltip
-        parent.find('.tooltip').tooltipster();
+        parent.find('.tooltip').tooltipster({contentAsHTML: true, interactive: true, theme: 'tooltipster-bb'});
 
         // Update icon counter
         this._initMapIconCounter();

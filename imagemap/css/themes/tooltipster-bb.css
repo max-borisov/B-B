@@ -1,0 +1,17 @@
+.tooltipster-bb {
+    border-radius: 1px;
+    border: 2px solid #000;
+    background: #4c4c4c;
+    color: #fff;
+    padding: 10px 5px;
+}
+.tooltipster-bb .tooltipster-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    overflow: hidden;
+}
+.tooltipster-bb .tooltipster-content a {
+    color: darkorange;
+}
