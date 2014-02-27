@@ -2,9 +2,9 @@ MapImageIcon = {
     // Icon counter
     _mapIconCounter : 0,
     // Icon width
-    iconW: 27,
+    iconW: 52,
     // Icon height
-    iconH: 26,
+    iconH: 52,
 
     // Main function
     init: function() {
