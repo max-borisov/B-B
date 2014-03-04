@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>B&B social sharing</title>
 
-    <!--<meta property="og:title" content="BB posting example"/>
+    <meta name="description" content="BB description tag">
+
+    <meta property="og:title" content="BB posting example"/>
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Parse is a complete technology stack to power your app's backend." />
     <meta property="og:url" content="http://bb.vardumper.com"/>
-    <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>-->
+    <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
 
 <!--    <meta property="og:site_name" content="BB project"/>-->
 <!--    <meta property="fb:app_id" content="{your_app_id}"/>-->
