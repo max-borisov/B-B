@@ -31,7 +31,7 @@ $fb2 = 'http://bb.vardumper.com/img_2.html';
 $name = 'ButchersAndBicycles';
 //$url = 'http://www.butchersandbicycles.com';
 //$url = 'http://bb.vardumper.com/social/share.php';
-$url = 'http://bb.vardumper.com';
+$url = 'http://bb.vardumper.com?act=1';
 $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
 ?>
 <ul>
