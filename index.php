@@ -25,6 +25,9 @@ if (isset($_GET['act'])) {
     echo '<h1>TEST</h1>';
 }
 
+$fb1 = 'http://bb.vardumper.com/img_1.html';
+$fb2 = 'http://bb.vardumper.com/img_2.html';
+
 $name = 'ButchersAndBicycles';
 //$url = 'http://www.butchersandbicycles.com';
 $url = 'http://bb.vardumper.com/social/share.php';
@@ -33,6 +36,8 @@ $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
 <ul>
     <li><a target="_blank" href="https://twitter.com/home?status=<?=$name;?>+<?=$url;?>">TW</a></li>
     <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?=$url;?>">FB</a></li>
+    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?=$fb1;?>">FB page 1</a></li>
+    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?=$fb2;?>">FB page 2</a></li>
     <li><a target="_blank" href="https://plus.google.com/share?url=<?=$url;?>">G+</a></li>
     <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?=$url;?>&title=<?=$name;?>">STUP</a></li>
     <li><a href="//www.pinterest.com/pin/create/button/?url=<?=$url;?>&media=<?=$media;?>&description=<?=$name;?>" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
