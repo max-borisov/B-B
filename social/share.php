@@ -17,7 +17,8 @@
 
 <?php
 $name = 'ButchersAndBicycles';
-$url = 'http://www.butchersandbicycles.com';
+//$url = 'http://www.butchersandbicycles.com';
+$url = 'http://bb.vardumper.com/social/share.php';
 $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
 ?>
 <ul>
