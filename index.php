@@ -35,8 +35,9 @@ $fb2 = 'http://bb.vardumper.com/img_2.html';
 $name = 'ButchersAndBicycles';
 //$url = 'http://www.butchersandbicycles.com';
 //$url = 'http://bb.vardumper.com/social/share.php';
-$url = 'http://bb.vardumper.com?act=1';
+$url = 'http://bb.vardumper.com';
 $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
+$media_2 = 'http://bb.vardumper.com/img/img_2.png';
 ?>
 <ul>
     <li><a target="_blank" href="https://twitter.com/home?status=<?=$name;?>+<?=$url;?>">TW</a></li>
@@ -47,7 +48,7 @@ $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
     <li><a target="_blank" href="https://plus.google.com/share?url=<?=$fb1;?>">G+ 2</a></li>
     <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?=$url;?>&title=<?=$name;?>">STUP</a></li>
     <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?=$fb1;?>&title=<?=$name;?>">STUP 2</a></li>
-    <li><a href="//www.pinterest.com/pin/create/button/?url=<?=$url;?>&media=<?=$media;?>&description=<?=$name;?>" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
+    <li><a href="//www.pinterest.com/pin/create/button/?url=<?=$url;?>&media=<?=$media_2;?>&description=<?=$name;?>" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
 </ul>
 
 
