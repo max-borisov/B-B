@@ -25,7 +25,7 @@ if (isset($_GET['act'])) {
     echo '<h1>TEST</h1>';
 }
 
-$fb1 = 'http://bb.vardumper.com/img_1.html';
+$fb1 = 'http://bb.vardumper.com/img_1.html?act=1';
 $fb2 = 'http://bb.vardumper.com/img_2.html';
 
 $name = 'ButchersAndBicycles';
