@@ -20,6 +20,11 @@
 <body>
 
 <?php
+
+if (isset($_GET['act'])) {
+    echo '<h1>TEST</h1>';
+}
+
 $name = 'ButchersAndBicycles';
 //$url = 'http://www.butchersandbicycles.com';
 $url = 'http://bb.vardumper.com/social/share.php';
