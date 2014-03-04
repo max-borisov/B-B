@@ -5,10 +5,12 @@
     <title>B&B social sharing</title>
 
     <meta property="og:title" content="BB posting example"/>
-<!--    <meta property="og:type" content="music.playlist"/>-->
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Parse is a complete technology stack to power your app's backend." />
     <meta property="og:url" content="http://bb.vardumper.com"/>
     <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
-    <meta property="og:site_name" content="BB project"/>
+    
+<!--    <meta property="og:site_name" content="BB project"/>-->
 <!--    <meta property="fb:app_id" content="{your_app_id}"/>-->
 <!--    <meta property="music:creator" content="http://samples.ogp.me/390580850990722"/>-->
 <!--    <link rel="opengraph" href={DESTINATION_URL}/>-->
