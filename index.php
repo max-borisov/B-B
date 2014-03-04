@@ -10,7 +10,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Parse is a complete technology stack to power your app's backend." />
     <meta property="og:url" content="http://bb.vardumper.com"/>
-    <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
+    <?php if (isset($_GET['act'])) { ?>
+        <meta property="og:image" content="http://bb.vardumper.com/img/img_2.png"/>
+    <?php } else { ?>
+        <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
+    <?php } ?>
 
 <!--    <meta property="og:site_name" content="BB project"/>-->
 <!--    <meta property="fb:app_id" content="{your_app_id}"/>-->
