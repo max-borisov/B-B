@@ -39,7 +39,9 @@ $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
     <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?=$fb1;?>">FB page 1</a></li>
     <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?=$fb2;?>">FB page 2</a></li>
     <li><a target="_blank" href="https://plus.google.com/share?url=<?=$url;?>">G+</a></li>
+    <li><a target="_blank" href="https://plus.google.com/share?url=<?=$fb1;?>">G+ 2</a></li>
     <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?=$url;?>&title=<?=$name;?>">STUP</a></li>
+    <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?=$fb1;?>&title=<?=$name;?>">STUP 2</a></li>
     <li><a href="//www.pinterest.com/pin/create/button/?url=<?=$url;?>&media=<?=$media;?>&description=<?=$name;?>" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
 </ul>
 
