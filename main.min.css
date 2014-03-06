@@ -1,0 +1,609 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    -moz-box-sizing: border-box
+}
+
+:focus {
+    outline: 0;
+    outline-color: transparent
+}
+
+ol, ul {
+    list-style: none
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ""
+}
+
+blockquote, q {
+    quotes: "" ""
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden
+}
+
+html, body {
+    color: #695a58;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 100%
+}
+
+#wrapper {
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: bold
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold
+}
+
+h1 a, h2 a {
+    text-decoration: none
+}
+
+#desc h1 {
+    margin-bottom: 20px
+}
+
+#start {
+    margin-top: 20px
+}
+
+#start-over {
+    display: inline-block;
+    font-size: .95em
+}
+
+.picture {
+    float: left;
+    width: 49%;
+    height: 100%
+}
+
+.text {
+    float: left;
+    width: 49%;
+    height: 100%
+}
+
+.text table, #desc-text table, #desc-picture table {
+    width: 100%;
+    height: 100%
+}
+
+.text table td, #desc-text table td {
+    text-align: left;
+    font-size: 1.15em;
+    line-height: 1.4em;
+    vertical-align: middle;
+    padding-left: 5%
+}
+
+#desc-wrapper {
+    height: 320px
+}
+
+#desc-picture table td {
+    vertical-align: middle;
+    text-align: center
+}
+
+#desc-picture {
+    float: left;
+    width: 49%;
+    height: 100%
+}
+
+#desc-text {
+    float: left;
+    width: 49%;
+    height: 100%
+}
+
+#desc-subtext {
+    font-size: .95em;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 15px 0 5px 0
+}
+
+#start {
+    display: inline-block;
+    font-size: .95em
+}
+
+.x-pretty-alert {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px
+}
+
+.ui-widget-overlay {
+    background: none !important
+}
+
+#carousel-wrapper, #carousel {
+    height: 410px
+}
+
+#carousel-wrapper {
+    width: 100%;
+    position: relative
+}
+
+#carousel-prev-wrapper, #carousel-next-wrapper {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 10
+}
+
+#carousel-prev-wrapper {
+    left: 1%
+}
+
+#carousel-next-wrapper {
+    right: 1%
+}
+
+#carousel-next, #carousel-prev {
+    width: 40px;
+    height: 40px
+}
+
+#container {
+    left: 8.4%;
+    width: 83.2%;
+    position: absolute
+}
+
+#carousel {
+    overflow: hidden
+}
+
+.carousel-list li {
+    display: block;
+    float: left
+}
+
+#item-list li.waiting {
+    background: url(../images/preload.gif) no-repeat center center
+}
+
+#last-step-bm .addthis_button_google_plusone, #last-step-bm .addthis_counter {
+    display: none !important
+}
+
+#copy {
+    color: #afabab;
+    font-size: .8em;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+#ads {
+    max-width: 728px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 15px
+}
+
+#share {
+    height: 32px;
+    margin: 15px auto;
+    overflow: hidden;
+    width: 170px
+}
+
+#share .pop {
+    margin: 0 5px
+}
+
+#last-step-bm #share {
+    margin: 10px 0 15px -5px
+}
+
+.share-affix {
+    position: fixed;
+    top: 50px;
+    left: 0
+}
+
+.share-icon {
+    background-repeat: no-repeat;
+    background-image: url('/4x-images/share/social-icons.png');
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    text-indent: -99999px;
+    margin: 2px;
+    opacity: .9
+}
+
+.share-icon:hover {
+    opacity: 1
+}
+
+.share-icon-digg {
+    background-position: -526px 0
+}
+
+.share-icon-email {
+    background-position: -614px 0
+}
+
+.share-icon-flickr {
+    background-position: -261px 0
+}
+
+.share-icon-foursquare {
+    background-position: 0 0
+}
+
+.share-icon-rss {
+    background-position: -305px 0
+}
+
+.share-icon-facebook {
+    background-position: -131px 0
+}
+
+.share-icon-twitter {
+    background-position: -174px 0
+}
+
+.share-icon-tumblr {
+    background-position: -87px 0
+}
+
+.share-icon-linkedin {
+    background-position: -438px 0
+}
+
+.share-icon-vimeo {
+    background-position: -393px 0
+}
+
+.share-icon-instagram {
+    background-position: -44px 0
+}
+
+.share-icon-pinterest {
+    background-position: -349px 0
+}
+
+.share-icon-googleplus {
+    background-position: -218px 0
+}
+
+.share-icon-in1 {
+    background-position: -482px 0
+}
+
+.share-icon-stumbleupon {
+    background-position: -570px 0
+}
+
+.share-square {
+    -moz-transition: all .2s linear 0s;
+    background: url("/4x-images/share/social-icons.png") no-repeat scroll left top transparent;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 0;
+    margin: 2px;
+    width: 32px
+}
+
+.share-square-behance {
+    background-position: -544px -44px
+}
+
+.share-square-behance:hover {
+    background-position: -544px -77px
+}
+
+.share-square-delicious {
+    background-position: -512px -44px
+}
+
+.share-square-delicious:hover {
+    background-position: -512px -77px
+}
+
+.share-square-deviantart {
+    background-position: -480px -44px
+}
+
+.share-square-deviantart:hover {
+    background-position: -480px -77px
+}
+
+.share-square-digg {
+    background-position: -448px -44px
+}
+
+.share-square-digg:hover {
+    background-position: -448px -77px
+}
+
+.share-square-dribbble {
+    background-position: -416px -44px
+}
+
+.share-square-dribbble:hover {
+    background-position: -416px -77px
+}
+
+.share-square-email {
+    background-position: -674px -44px
+}
+
+.share-square-email:hover {
+    background-position: -674px -77px
+}
+
+.share-square-facebook {
+    background-position: -384px -44px
+}
+
+.share-square-facebook:hover {
+    background-position: -384px -77px
+}
+
+.share-square-flickr {
+    background-position: -352px -44px
+}
+
+.share-square-flickr:hover {
+    background-position: -352px -77px
+}
+
+.share-square-forrst {
+    background-position: -320px -44px
+}
+
+.share-square-forrst:hover {
+    background-position: -320px -77px
+}
+
+.share-square-googleplus {
+    background-position: -288px -44px
+}
+
+.share-square-googleplus:hover {
+    background-position: -288px -77px
+}
+
+.share-square-in1 {
+    background-position: -576px -44px
+}
+
+.share-square-in1:hover {
+    background-position: -576px -77px
+}
+
+.share-square-instagram {
+    background-position: -608px -44px
+}
+
+.share-square-instagram:hover {
+    background-position: -608px -77px
+}
+
+.share-square-lastfm {
+    background-position: -256px -44px
+}
+
+.share-square-lastfm:hover {
+    background-position: -256px -77px
+}
+
+.share-square-linkedin {
+    background-position: -224px -44px
+}
+
+.share-square-linkedin:hover {
+    background-position: -224px -77px
+}
+
+.share-square-pinterest {
+    background-position: -192px -44px
+}
+
+.share-square-pinterest:hover {
+    background-position: -192px -77px
+}
+
+.share-square-rss {
+    background-position: -160px -44px
+}
+
+.share-square-rss:hover {
+    background-position: -160px -77px
+}
+
+.share-square-skype {
+    background-position: -128px -44px
+}
+
+.share-square-skype:hover {
+    background-position: -128px -77px
+}
+
+.share-square-stumbleupon {
+    background-position: -640px -44px
+}
+
+.share-square-stumbleupon:hover {
+    background-position: -640px -77px
+}
+
+.share-square-tumblr {
+    background-position: -96px -44px
+}
+
+.share-square-tumblr:hover {
+    background-position: -96px -77px
+}
+
+.share-square-twitter {
+    background-position: -64px -44px
+}
+
+.share-square-twitter:hover {
+    background-position: -64px -77px
+}
+
+.share-square-vimeo {
+    background-position: -32px -44px
+}
+
+.share-square-vimeo:hover {
+    background-position: -32px -77px
+}
+
+.share-square-youtube {
+    background-position: 0 -44px
+}
+
+.share-square-youtube:hover {
+    background-position: 0 -77px
+}
+
+@media only screen and (max-width: 770px) {
+    #carousel-wrapper, #carousel {
+        height: 360px
+    }
+
+    .picture img {
+        height: 95%;
+        width: auto;
+        margin-top: 2.5%
+    }
+
+    #desc-picture img {
+        width: 100%;
+        height: auto
+    }
+
+    #desc-text {
+        padding-top: 0;
+        font-size: .95em
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #carousel-wrapper, #carousel {
+        height: 320px
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #wrapper {
+        max-width: 360px
+    }
+
+    #carousel-wrapper, #carousel {
+        height: 660px
+    }
+
+    #content {
+        margin: 0 auto
+    }
+
+    .picture {
+        height: 360px;
+        width: 100%;
+        text-align: center
+    }
+
+    .text {
+        height: 300px;
+        width: 100%
+    }
+
+    #container {
+        left: 0;
+        width: 100%
+    }
+
+    .text table td, #desc-text table td {
+        text-align: center;
+        vertical-align: top;
+        padding: 30px 5px 0 5px
+    }
+
+    #desc-wrapper {
+        height: 575px
+    }
+
+    #desc p {
+        text-align: center
+    }
+
+    #desc-picture, #desc-text {
+        width: 100%
+    }
+
+    #desc-picture img {
+        margin-top: 2.5%;
+        width: 100%;
+        height: auto
+    }
+
+    #desc-picture {
+        padding-top: 0;
+        height: 320px
+    }
+
+    #desc-text {
+        height: 300px
+    }
+
+    #last-step-bm #share {
+        margin: 10px auto 15px auto
+    }
+
+    #ads {
+        margin-top: 20px
+    }
+}
