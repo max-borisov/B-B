@@ -12,7 +12,7 @@
     <meta property="og:title" content="BB posting example"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="We are working hard to make the Mk1 available on export markets as soon as possible. Please follow our Facebook page to get updates on availability."/>
-    <meta property="og:url" content="http://bb.vardumper.com"/>
+    <meta property="og:url" content="http://bb.vardumper.com/share"/>
     <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
 </head>
 <body>
