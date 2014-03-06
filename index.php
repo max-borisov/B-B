@@ -5,6 +5,8 @@
     <title>B&B social sharing</title>
 
     <link rel="stylesheet" type="text/css" href="share.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="share.js"></script>
 
     <meta name="description" content="BB description tag">
     <meta property="og:title" content="BB posting example"/>
@@ -58,7 +60,7 @@ It has long been established that the bicycle is in fact an actual alternative t
 //$shareTitle = urlencode('Butchers and Bicycles');
 ?>
 
-<div id="share">
+<div id="share" data-title="<?=$shareTitle;?>">
     <a
         href="https://twitter.com/home?status=<?=urlencode($shareTitle . ' ' . $shareUrl);?>"
         title="Share this item on twitter" class="pop share-square share-square-twitter"

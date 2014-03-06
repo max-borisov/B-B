@@ -50,7 +50,7 @@ $media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
 
 <!--<a href="//www.pinterest.com/pin/create/button/?url=<?/*=$url;*/?>&media=<?/*=$media;*/?>&description=<?/*=$name;*/?>" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>-->
 <!-- Please call pinit.js only once per page -->
-<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+<!--<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>-->
 
 </body>
 </html>
