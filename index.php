@@ -70,7 +70,7 @@ It has long been established that the bicycle is in fact an actual alternative t
         style="display: inline-block;"></a>
 
     <a
-        href="http://www.facebook.com/sharer.php?u=<?=urlencode($shareUrl)?>;&amp;title=<?=urlencode($shareTitle)?>"
+        href="http://www.facebook.com/sharer.php?u=<?=urlencode($shareUrl)?>&amp;title=<?=urlencode($shareTitle)?>"
         title="Share this item on facebook" class="pop share-square share-square-facebook"
         style="display: inline-block;"></a>
 
