@@ -11,7 +11,7 @@
 
 .share-square {
     -moz-transition: all .2s linear 0s;
-    background: url("./social-icons.png") no-repeat scroll left top transparent;
+    background: url("social-icons.png") no-repeat scroll left top transparent;
     display: block;
     float: left;
     height: 32px;

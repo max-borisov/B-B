@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="share.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="share.js"></script>
+    <script type="text/javascript" src="share/share.js"></script>
 
     <meta name="description" content="BB description tag">
     <meta property="og:title" content="BB posting example"/>
@@ -24,34 +24,32 @@
 
 <?php
 
-$fb1 = 'http://bb.vardumper.com/img_1.html?act=1';
-$fb2 = 'http://bb.vardumper.com/img_2.html';
-
-$name = 'ButchersAndBicycles';
+//$fb1 = 'http://bb.vardumper.com/img_1.html?act=1';
+//$fb2 = 'http://bb.vardumper.com/img_2.html';
+//$name = 'ButchersAndBicycles';
 //$url = 'http://www.butchersandbicycles.com';
 //$url = 'http://bb.vardumper.com/social/share.php';
-$url = 'http://bb.vardumper.com';
-$media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
-$media_2 = 'http://bb.vardumper.com/img/img_2.png';
+//$url = 'http://bb.vardumper.com';
+//$media = 'http://www.butchersandbicycles.com/images/about-img.jpg';
+//$media_2 = 'http://bb.vardumper.com/img/img_2.png';
 ?>
-<ul>
-    <li><a target="_blank" href="https://twitter.com/home?status=<?= $name; ?>+<?= $url; ?>">TW</a></li>
-    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?= $url; ?>">FB</a></li>
-    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?= $fb1; ?>">FB page 1</a></li>
-    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?= $fb2; ?>">FB page 2</a></li>
-    <li><a target="_blank" href="https://plus.google.com/share?url=<?= $url; ?>">G+</a></li>
-    <li><a target="_blank" href="https://plus.google.com/share?url=<?= $fb1; ?>">G+ 2</a></li>
-    <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?= $url; ?>&title=<?= $name; ?>">STUP</a></li>
-    <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?= $fb1; ?>&title=<?= $name; ?>">STUP 2</a></li>
+<!--<ul>
+    <li><a target="_blank" href="https://twitter.com/home?status=<?/*= $name; */?>+<?/*= $url; */?>">TW</a></li>
+    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?/*= $url; */?>">FB</a></li>
+    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?/*= $fb1; */?>">FB page 1</a></li>
+    <li><a target="_blank" href="http://www.facebook.com/sharer.php?u=<?/*= $fb2; */?>">FB page 2</a></li>
+    <li><a target="_blank" href="https://plus.google.com/share?url=<?/*= $url; */?>">G+</a></li>
+    <li><a target="_blank" href="https://plus.google.com/share?url=<?/*= $fb1; */?>">G+ 2</a></li>
+    <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?/*= $url; */?>&title=<?/*= $name; */?>">STUP</a></li>
+    <li><a target="_blank" href="http://www.stumbleupon.com/submit?url=<?/*= $fb1; */?>&title=<?/*= $name; */?>">STUP 2</a></li>
     <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=<?= $url; ?>&media=<?= $media_2; ?>&description=<?= $name; ?>"
+        <a href="//www.pinterest.com/pin/create/button/?url=<?/*= $url; */?>&media=<?/*= $media_2; */?>&description=<?/*= $name; */?>"
            data-pin-do="buttonPin" data-pin-config="none"><img
                 src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png"/></a></li>
 </ul>
-<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>-->
 
 <?php
-//$shareUrl = urlencode('http://bb.vardumper.com');
 $shareUrl = 'http://bb.vardumper.com';
 $shareTitle =htmlspecialchars('Butchers&Bicycles');
 $shareDesc = 'Our first cargo bike — simply called the Mk I – is for anyone who loves cycling. With it, we intend to challenge the perception of how fun and easy riding a cargo bike can be without compromising usability.
