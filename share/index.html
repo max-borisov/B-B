@@ -12,8 +12,12 @@
     <meta property="og:title" content="BB posting example"/>
     <meta property="og:type" content="website"/>
     <meta property="og:description" content="We are working hard to make the Mk1 available on export markets as soon as possible. Please follow our Facebook page to get updates on availability."/>
-    <meta property="og:url" content="http://bb.vardumper.com/share/index.html"/>
-    <meta property="og:image" content="http://bb.vardumper.com/imagemap/images/bike.jpg"/>
+    <?php
+        $imgToShare = 'http://bb.vardumper.com/imagemap/images/bike.jpg';
+        $urlToShare = urlencode('http://bb.vardumper.com/share/index.html');
+    ?>
+    <meta property="og:url" content="<?=$urlToShare;?>"/>
+    <meta property="og:image" content="<?=$imgToShare;?>"/>
 </head>
 <body>
 
@@ -50,7 +54,7 @@ $shareDesc = urlencode('Our first cargo bike — simply called the Mk I – is f
         style="display: inline-block;"></a>
 
     <a
-        href="https://www.pinterest.com/pin/create/link/?url=<?=$shareUrl;?>&media=<?=$media;?>&description=<?=$shareDesc;?>"
+        href="http://www.pinterest.com/pin/create/button/?media=<?=$imgToShare;?>&url=<?=$urlToShare;?>&description=<?=$shareDesc;?>"
         title="Share this item on pinterest" class="pop share-square share-square-pinterest"
         style="display: inline-block;"></a>
 
